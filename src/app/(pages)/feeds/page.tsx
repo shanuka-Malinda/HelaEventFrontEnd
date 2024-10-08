@@ -1,4 +1,6 @@
 "use client";
+import Event from '@/app/components/event/page';
+import Infocard from '@/app/components/infocard/page';
 import {
     ChatBubbleBottomCenterTextIcon,
     HeartIcon as HeartIconOutline,
@@ -154,6 +156,9 @@ const Feeds: React.FC = () => {
                         </option>
                     ))}
                 </select>
+                 <div>
+                    <Event></Event>
+                 </div>
             </div>
 
             {/* Center Column for Posts */}
@@ -165,9 +170,9 @@ const Feeds: React.FC = () => {
 
             {/* Right Column for Chats */}
             <div className="w-full md:w-1/4 p-4 border-l border-gray-900 md:fixed md:top-[60px] md:bottom-0 md:right-20 bg-black max-h-[800px]">
-                <h2 className="text-lg font-bold mb-4">Chats</h2>
-                <div className="bg-gray-800 rounded-lg p-4 md:h-600">
-                    <p className="text-gray-400">Chat functionality will be here.</p>
+                <h2 className="text-lg font-bold mb-4">Contact Artist</h2>
+                <div className="bg-gray-800 rounded-lg p-4 md:h-600 overflow-y-auto">
+                    <Infocard></Infocard>
                 </div>
             </div>
         </div>

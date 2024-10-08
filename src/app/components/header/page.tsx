@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-10 ">
-            <div className="bg-black  max-w-[800px] w-full rounded-[20px] mx-auto px-4 sm:px-6 lg:px-8 shadow-[0_6px_20px_rgba(255,255,255,0.1)]">
+            <div className="bg-[rgba(0,0,0,0.8)]  max-w-[800px] w-full rounded-[20px] mx-auto px-4 sm:px-6 lg:px-8 shadow-[0_6px_20px_rgba(255,255,255,0.1)]">
                 <div className="flex justify-between h-16 items-center">
                     {/* Left Side: Logo */}
                     <div className="flex-shrink-0">

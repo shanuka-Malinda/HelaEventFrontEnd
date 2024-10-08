@@ -29,7 +29,7 @@ const artistsData: Artist[] = [
         businessName: 'Doe Creations',
         address: '123 Main St, Colombo, Sri Lanka',
         contactNumber: '+94 123 456 789',
-        imageUrl: '/profile/avatar.png',
+        imageUrl: '/profile/a4.png',
         category: 'Creations',
     },
     {
@@ -47,7 +47,7 @@ const artistsData: Artist[] = [
         businessName: 'Doe Creations',
         address: '123 Main St, Colombo, Sri Lanka',
         contactNumber: '+94 123 456 789',
-        imageUrl: '/profile/avatar.png',
+        imageUrl: '/profile/a1.png',
         category: 'Creations',
     },
     {
@@ -56,7 +56,7 @@ const artistsData: Artist[] = [
         businessName: 'Doe Creations',
         address: '123 Main St, Colombo, Sri Lanka',
         contactNumber: '+94 123 456 789',
-        imageUrl: '/profile/avatar.png',
+        imageUrl: '/profile/a2.png',
         category: 'Creations',
     },
     {
@@ -65,7 +65,7 @@ const artistsData: Artist[] = [
         businessName: 'Doe Creations',
         address: '123 Main St, Colombo, Sri Lanka',
         contactNumber: '+94 123 456 789',
-        imageUrl: '/profile/avatar.png',
+        imageUrl: '/profile/a3.png',
         category: 'Creations',
     },
 ];
@@ -122,13 +122,15 @@ const Artists: React.FC = () => {
                         <div
                             key={artist.id}
                             className="bg-gray-800 p-4 rounded-lg shadow-lg"
-                            style={{ maxWidth: '380px', maxHeight: '360px', width: '100%' }}
+                            style={{ maxWidth: '280px', maxHeight: '360px', width: '100%' }}
                         >
-                            <img
-                                src={artist.imageUrl}
-                                alt={artist.name}
-                                className="w-full h-40 object-cover rounded-lg mb-4"
-                            />
+                            <div className='flex justify-center'>
+                                <img
+                                    src={artist.imageUrl}
+                                    alt={artist.name}
+                                    className="w-40 h-40 object-cover rounded-lg mb-4"
+                                />
+                            </div>
                             <h3 className="text-xl font-semibold text-white">{artist.name}</h3>
                             <p className="text-sm text-gray-400">{artist.businessName}</p>
                             <p className="text-sm text-gray-400">{artist.address}</p>
