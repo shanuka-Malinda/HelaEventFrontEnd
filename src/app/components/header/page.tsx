@@ -44,10 +44,10 @@ const Header: React.FC = () => {
                             Feeds
                         </a>
                         <a
-                            href="/feeds"
+                            href="/artists"
                             className="text-gray-400 hover:text-white text-base font-medium px-3 py-2"
                         >
-                            Creatives
+                            Artists
                         </a>
                     </div>
 
@@ -132,6 +132,12 @@ const Header: React.FC = () => {
                             className="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                         >
                             Feeds
+                        </a>
+                        <a
+                            href="/artists"
+                            className="text-gray-400 hover:text-white text-base font-medium px-3 py-2"
+                        >
+                            Artists
                         </a>
                     </div>
                 </div>
