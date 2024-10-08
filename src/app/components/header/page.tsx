@@ -1,5 +1,6 @@
-"use client";
+"use client"; // This makes the component a client component
 import Image from 'next/image';
+import { usePathname } from 'next/navigation'; // Use 'usePathname' for the current path in the new App Router
 import { useState } from "react";
 import LogoImg from '../../../../public/logo.png';
 
@@ -15,9 +16,11 @@ const Header: React.FC = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
+    const pathname = usePathname(); // Get the current path
+
     return (
-        <nav className="fixed top-0 left-0 right-0 z-10 ">
-            <div className="bg-[rgba(0,0,0,0.8)]  max-w-[800px] w-full rounded-[20px] mx-auto px-4 sm:px-6 lg:px-8 shadow-[0_6px_20px_rgba(255,255,255,0.1)]">
+        <nav className="fixed top-0 left-0 right-0 z-10">
+            <div className="bg-[rgba(0,0,0,0.8)] max-w-[800px] w-full rounded-[20px] mx-auto px-4 sm:px-6 lg:px-8 shadow-[0_6px_20px_rgba(255,255,255,0.1)]">
                 <div className="flex justify-between h-16 items-center">
                     {/* Left Side: Logo */}
                     <div className="flex-shrink-0">
@@ -29,23 +32,29 @@ const Header: React.FC = () => {
                         />
                     </div>
 
-                    {/* Center: Home & Feeds */}
+                    {/* Center: Home, Feeds, Artists */}
                     <div className="hidden sm:flex sm:space-x-8">
                         <a
                             href="/"
-                            className="text-white text-base font-medium px-3 py-2 hover:text-gray-400"
+                            className={`${
+                                pathname === '/' ? 'font-bold text-white' : 'text-gray-400'
+                            } text-base font-medium px-3 py-2 hover:text-white`}
                         >
                             Home
                         </a>
                         <a
                             href="/feeds"
-                            className="text-gray-400 hover:text-white text-base font-medium px-3 py-2"
+                            className={`${
+                                pathname === '/feeds' ? 'font-bold text-white' : 'text-gray-400'
+                            } text-base font-medium px-3 py-2 hover:text-white`}
                         >
                             Feeds
                         </a>
                         <a
                             href="/artists"
-                            className="text-gray-400 hover:text-white text-base font-medium px-3 py-2"
+                            className={`${
+                                pathname === '/artists' ? 'font-bold text-white' : 'text-gray-400'
+                            } text-base font-medium px-3 py-2 hover:text-white`}
                         >
                             Artists
                         </a>
@@ -105,7 +114,7 @@ const Header: React.FC = () => {
                                         Login
                                     </a>
                                     <a
-                                        href="signup"
+                                        href="/signup"
                                         className="block px-4 py-2 text-base text-white hover:bg-gray-700"
                                     >
                                         SignUp
@@ -123,19 +132,25 @@ const Header: React.FC = () => {
                     <div className="px-2 pt-2 pb-3 space-y-1">
                         <a
                             href="/"
-                            className="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-gray-300"
+                            className={`${
+                                pathname === '/' ? 'font-bold text-white' : 'text-gray-400'
+                            } block px-3 py-2 rounded-md text-base font-medium hover:text-white`}
                         >
                             Home
                         </a>
                         <a
                             href="/feeds"
-                            className="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                            className={`${
+                                pathname === '/feeds' ? 'font-bold text-white' : 'text-gray-400'
+                            } block px-3 py-2 rounded-md text-base font-medium hover:text-white`}
                         >
                             Feeds
                         </a>
                         <a
                             href="/artists"
-                            className="text-gray-400 hover:text-white text-base font-medium px-3 py-2"
+                            className={`${
+                                pathname === '/artists' ? 'font-bold text-white' : 'text-gray-400'
+                            } block px-3 py-2 rounded-md text-base font-medium hover:text-white`}
                         >
                             Artists
                         </a>

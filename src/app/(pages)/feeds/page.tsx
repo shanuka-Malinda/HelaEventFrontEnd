@@ -156,7 +156,7 @@ const Feeds: React.FC = () => {
                         </option>
                     ))}
                 </select>
-                 <div>
+                 <div className='hidden md:block'>
                     <Event></Event>
                  </div>
             </div>
@@ -169,7 +169,7 @@ const Feeds: React.FC = () => {
             />
 
             {/* Right Column for Chats */}
-            <div className="w-full md:w-1/4 p-4 border-l border-gray-900 md:fixed md:top-[60px] md:bottom-0 md:right-20 bg-black max-h-[800px]">
+            <div className="w-full md:w-1/4 p-4 border-l border-gray-900 md:fixed md:top-[60px] md:bottom-0 md:right-20 bg-black max-h-[800px] hidden md:block">
                 <h2 className="text-lg font-bold mb-4">Contact Artist</h2>
                 <div className="bg-gray-800 rounded-lg p-4 md:h-600 overflow-y-auto">
                     <Infocard></Infocard>

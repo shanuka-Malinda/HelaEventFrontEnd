@@ -20,7 +20,7 @@ const events: EventItem[] = [
     title: "Vesak Festival",
     imageUrl: "/event/vsk.jpeg",
   },  {
-    title: "deepavali Festival",
+    title: "Deepavali Festival",
     imageUrl: "/event/dpw.jpeg",
   },
   // Add more events as needed

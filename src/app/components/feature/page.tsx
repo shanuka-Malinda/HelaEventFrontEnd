@@ -2,28 +2,28 @@
 
 const features = [
     {
-        name: 'Push to deploy',
+        name: 'Post Events Easily',
         description:
-            'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-        icon: '🚀',
+            'Create and manage events for traditional dancers, musicians, and drama teams effortlessly. Share your event with the community.',
+        icon: '📅',
     },
     {
-        name: 'SSL certificates',
+        name: 'Secure Bookings',
         description:
-            'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+            'Ensure safe and hassle-free bookings for events with verified participants and providers, ensuring a smooth event experience.',
         icon: '🔒',
     },
     {
-        name: 'Simple queues',
+        name: 'Customizable Profiles',
         description:
-            'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-        icon: '🔄',
+            'Artists and event providers can build detailed profiles showcasing their talents, ensuring better visibility for traditional performances.',
+        icon: '🎭',
     },
     {
-        name: 'Advanced security',
+        name: 'Connect with Providers',
         description:
-            'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-        icon: '🛡️',
+            'Easily find and connect with traditional event providers like dancers, musicians, and drama teams, bringing authenticity to your events.',
+        icon: '🤝',
     },
 ];
 
@@ -32,13 +32,12 @@ const Feature: React.FC = () => {
         <div className="bg-black py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-gray-400">Deploy faster</h2>
+                    <h2 className="text-base font-semibold leading-7 text-gray-400">Celebrate Tradition</h2>
                     <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                        Everything you need to deploy your app
+                        Everything you need to manage traditional events
                     </p>
                     <p className="mt-6 text-lg leading-8 text-gray-400">
-                        Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-                        pulvinar et feugiat blandit at. In mi viverra elit nunc.
+                        Discover and manage a variety of traditional events, from cultural performances to local festivals. Join hands with talented performers to make your event unforgettable.
                     </p>
                 </div>
                 <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -60,4 +59,5 @@ const Feature: React.FC = () => {
         </div>
     );
 }
+
 export default Feature;

@@ -59,7 +59,7 @@ const cardData = [
 
 const Infocard: React.FC = () => {
     return (
-        <div className="grid grid-cols-1 gap-4"> {/* Adjusted gap for smaller spacing */}
+        <div className="grid grid-cols-1 gap-2 "> {/* Adjusted gap for smaller spacing */}
             {cardData.map((card) => (
                 <div
                     key={card.id}
